@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /opt/webrtc/webtut-signal-backend
+node server.js

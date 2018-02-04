@@ -1,0 +1,14 @@
+[Unit]
+Description=NodeJS backend for WebRTC WebTUT 
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/opt/webrtc/webtut-signal-backend/utils/start_node_server
+# Give a reasonable amount of time to start up/shut down
+TimeoutSec=300
+
+[Install]
+WantedBy=multi-user.target

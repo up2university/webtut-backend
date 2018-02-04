@@ -1,0 +1,11 @@
+= INSTALL AS A SERVICE =
+
+. Edit both files, update the correct path
+. Execute the command line:
+ . cp webrtc-webtut.service /etc/systemd/system
+ . systemctl enable webrtc-webtut.service
+ . systemctl start webrtc-webtut.service
+
+== Look at Logs ==
+
+ # journalctl -f -u webrtc-webtut.service
